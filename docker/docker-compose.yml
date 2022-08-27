@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+
+  accounts:
+    image: vsn/crypto-tracker:latest
+    ports:
+      - "8080:8080"
+    environment:
+      host : "smtp.mailtrap.io"
+      port :  2525
+      username : ""
+      password : ""
+      max : "20216"
+      min : "20210"
+      email: "vinaysn.ranjan@gmail.com"
